@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post an Internship - Bridge Campus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Bridge Campus</h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Browse Jobs</a></li>
+                <li><a href="company-dashboard.html">For Companies</a></li>
+                <li><a href="login.html" class="btn-outline">Login</a></li>
+                <li><a href="signup.html" class="btn-primary">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Post Job Form -->
+    <div style="max-width: 700px; margin: 40px auto; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <h2 style="color: #0046ad; margin-bottom: 10px;">Post a New Internship</h2>
+        <p style="color: #666; margin-bottom: 30px;">Fill in the details below to reach thousands of students.</p>
+        
+        <form>
+            <!-- Company Info (pre-filled in real app) -->
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 25px;">
+                <h4 style="color: #333; margin-bottom: 15px;">Company Information</h4>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <div>
+                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">Company Name</label>
+                        <input type="text" value="Debswana" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; background: #f0f0f0;" readonly>
+                        <p style="font-size: 12px; color: #666;">Auto-filled from company profile</p>
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 5px; font-weight: bold;">Industry</label>
+                        <input type="text" value="Mining" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; background: #f0f0f0;" readonly>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Job Details -->
+            <h4 style="color: #333; margin: 20px 0 15px;">Internship Details</h4>
+            
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Job Title</label>
+                <input type="text" placeholder="e.g., IT Intern, Marketing Intern" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+                <div>
+                    <label style="display: block; margin-bottom: 5px; font-weight: bold;">Location</label>
+                    <select style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option>Gaborone</option>
+                        <option>Francistown</option>
+                        <option>Palapye</option>
+                        <option>Maun</option>
+                        <option>Lobatse</option>
+                        <option>Selibe-Phikwe</option>
+                        <option>Other (specify in description)</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="display: block; margin-bottom: 5px; font-weight: bold;">Duration</label>
+                    <select style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option>1 month</option>
+                        <option>2 months</option>
+                        <option>3 months</option>
+                        <option>4 months</option>
+                        <option>5 months</option>
+                        <option>6 months</option>
+                        <option>More than 6 months</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+                <div>
+                    <label style="display: block; margin-bottom: 5px; font-weight: bold;">Start Date</label>
+                    <input type="date" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+                <div>
+                    <label style="display: block; margin-bottom: 5px; font-weight: bold;">Application Deadline</label>
+                    <input type="date" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Number of Positions</label>
+                <input type="number" min="1" value="1" style="width: 100px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+            
+            <!-- Description -->
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Job Description</label>
+                <textarea rows="5" placeholder="Describe the role, responsibilities, and what the intern will learn..." style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+            </div>
+            
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Requirements</label>
+                <textarea rows="4" placeholder="List the requirements: field of study, year of study, skills needed..." style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+            </div>
+            
+            <div style="margin-bottom: 25px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Stipend / Allowance (if any)</label>
+                <input type="text" placeholder="e.g., P1500 per month, Unpaid, Negotiable" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+            
+            <!-- Contact Info -->
+            <h4 style="color: #333; margin: 20px 0 15px;">Contact Information</h4>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+                <div>
+                    <label style="display: block; margin-bottom: 5px; font-weight: bold;">Contact Person</label>
+                    <input type="text" value="Thabo Molapo" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+                <div>
+                    <label style="display: block; margin-bottom: 5px; font-weight: bold;">Contact Email</label>
+                    <input type="email" value="hr@debswana.bw" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+            </div>
+            
+            <div style="margin-bottom: 30px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Contact Phone</label>
+                <input type="tel" placeholder="e.g., 71 234 567" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+            
+            <!-- Preview and Submit -->
+            <div style="display: flex; gap: 15px;">
+                <button onclick="window.location.href='company-dashboard.html'" style="flex: 1; background: #28a745; color: white; padding: 14px; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer;">
+                    Post Internship
+                </button>
+                <button onclick="window.location.href='company-dashboard.html'" style="flex: 0.5; background: #6c757d; color: white; padding: 14px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+                    Cancel
+                </button>
+            </div>
+        </form>
+        
+        <!-- Demo Note -->
+        <p style="text-align: center; margin-top: 30px; font-size: 13px; color: #888; border-top: 1px dashed #ddd; padding-top: 20px;">
+            Demo: Clicking "Post Internship" saves the listing and returns to company dashboard.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px;">
+        <p>&copy; 2026 Bridge Campus. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Internships - Bridge Campus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Bridge Campus</h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Browse Jobs</a></li>
+                <li><a href="company-dashboard.html">For Companies</a></li>
+                <li><a href="login.html" class="btn-outline">Login</a></li>
+                <li><a href="signup.html" class="btn-primary">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <section class="jobs-page">
+        <div class="container">
+            <h1>Browse Internships</h1>
+            
+            <!-- Filters -->
+            <div class="filters">
+                <select>
+                    <option>All Industries</option>
+                    <option>Information Technology</option>
+                    <option>Marketing</option>
+                    <option>Engineering</option>
+                    <option>Finance</option>
+                    <option>Human Resources</option>
+                </select>
+                
+                <select>
+                    <option>All Locations</option>
+                    <option>Gaborone</option>
+                    <option>Francistown</option>
+                    <option>Palapye</option>
+                    <option>Maun</option>
+                </select>
+                
+                <input type="text" placeholder="Search by company or title...">
+            </div>
+            
+            <!-- Job Listings -->
+            <div class="job-listings">
+                <!-- Job Card 1 -->
+                <div class="job-card">
+                    <div class="job-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="job-info">
+                        <h3>IT Intern</h3>
+                        <p class="company-name">Debswana</p>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Gaborone</span>
+                            <span><i class="fas fa-clock"></i> 3 months</span>
+                            <span><i class="fas fa-calendar"></i> Apply by: 30 Apr 2026</span>
+                        </div>
+                        <p class="job-description">Looking for IT students to assist with network administration and user support.</p>
+                    </div>
+                    <div class="job-actions">
+                        <button class="btn-apply" onclick="alert('Application submitted! (Demo)')">Apply Now</button>
+                        <p class="saved"><i class="far fa-bookmark"></i> Save</p>
+                    </div>
+                </div>
+                
+                <!-- Job Card 2 -->
+                <div class="job-card">
+                    <div class="job-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="job-info">
+                        <h3>Marketing Intern</h3>
+                        <p class="company-name">Mascom</p>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Gaborone</span>
+                            <span><i class="fas fa-clock"></i> 6 months</span>
+                            <span><i class="fas fa-calendar"></i> Apply by: 15 May 2026</span>
+                        </div>
+                        <p class="job-description">Support the marketing team with social media, campaigns, and events.</p>
+                    </div>
+                    <div class="job-actions">
+                        <button class="btn-apply" onclick="alert('Application submitted! (Demo)')">Apply Now</button>
+                        <p class="saved"><i class="far fa-bookmark"></i> Save</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+</body>
+</html>

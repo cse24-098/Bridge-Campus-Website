@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Bridge Campus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Bridge Campus</h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Browse Jobs</a></li>
+                <li><a href="for-companies.html">For Companies</a></li>
+                <li><a href="login.html" class="btn-outline">Login</a></li>
+                <li><a href="signup.html" class="btn-primary">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="dashboard">
+        <div class="container">
+            <h1>My Dashboard</h1>
+            
+            <!-- Profile Summary -->
+            <div class="profile-summary">
+                <div class="profile-avatar">KT</div>
+                <div class="profile-info">
+                    <h3>Kagiso Thabo</h3>
+                    <p>BSc Computer Science, Year 3 • University of Botswana</p>
+                </div>
+            </div>
+            
+            <div class="dashboard-grid">
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#" class="active">Dashboard</a></li>
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">My Applications</a></li>
+                        <li><a href="#">Saved Jobs</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="main-content">
+                    <h2>My Applications</h2>
+                    
+                    <div class="application-card">
+                        <h3>IT Intern at Debswana</h3>
+                        <p><strong>Applied:</strong> 15 March 2026</p>
+                        <p><strong>Status:</strong> <span class="status pending">Pending</span></p>
+                    </div>
+                    
+                    <div class="application-card">
+                        <h3>Software Developer Intern at FNB</h3>
+                        <p><strong>Applied:</strong> 10 March 2026</p>
+                        <p><strong>Status:</strong> <span class="status interview">Interview Scheduled</span></p>
+                    </div>
+                    
+                    <div class="application-card">
+                        <h3>Data Analyst Intern at Mascom</h3>
+                        <p><strong>Applied:</strong> 5 March 2026</p>
+                        <p><strong>Status:</strong> <span class="status accepted">Accepted</span></p>
+                    </div>
+                </div>
+
+                <!-- Mentorship Section -->
+                <div style="background: linear-gradient(135deg, #0046ad, #002b6a); color: white; padding: 30px; border-radius: 10px; margin-top: 30px;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+                        <div>
+                            <h2 style="color: white; margin-bottom: 10px;">Learn from those who have been there</h2>
+                            <p style="margin-bottom: 0; font-size: 16px; opacity: 0.9;">Connect with experienced alumni who can guide you through your internship journey and career path.</p>
+                        </div>
+                        <div style="margin-top: 15px;">
+                            <a href="mentor.html" style="background: white; color: #0046ad; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">Find a Mentor</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+</body>
+</html>

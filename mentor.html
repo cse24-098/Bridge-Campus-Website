@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Mentor - Bridge Campus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Bridge Campus</h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Browse Jobs</a></li>
+                <li><a href="company-dashboard.html">For Companies</a></li>
+                <li><a href="login.html" class="btn-outline">Login</a></li>
+                <li><a href="signup.html" class="btn-primary">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mentors Listing Page -->
+    <section style="padding: 40px 0; background: #f5f7fa;">
+        <div class="container">
+            <!-- Header -->
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h1 style="color: #0046ad; font-size: 36px; margin-bottom: 15px;">Find a Mentor</h1>
+                <p style="color: #666; font-size: 18px; max-width: 700px; margin: 0 auto;">Connect with experienced alumni who can guide you through your internship journey and career path.</p>
+            </div>
+
+            <!-- Search and Filter Bar -->
+            <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <div style="display: grid; grid-template-columns: 2fr 1fr 1fr auto; gap: 15px;">
+                    <input type="text" placeholder="Search by name, industry, or company" style="padding: 12px; border: 1px solid #ddd; border-radius: 5px; width: 100%;">
+                    <select style="padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option>All Industries</option>
+                        <option>Technology</option>
+                        <option>Mining</option>
+                        <option>Finance</option>
+                        <option>Marketing</option>
+                        <option>Engineering</option>
+                        <option>Healthcare</option>
+                    </select>
+                    <select style="padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option>All Institutions</option>
+                        <option>University of Botswana</option>
+                        <option>BIUST</option>
+                        <option>Botho University</option>
+                        <option>Limkokwing</option>
+                    </select>
+                    <button onclick="alert('Search filters applied (demo)')" style="background: #0046ad; color: white; border: none; padding: 12px 25px; border-radius: 5px; cursor: pointer;">Search</button>
+                </div>
+            </div>
+
+            <!-- Mentors Grid -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px;">
+                <!-- Mentor Card 1 -->
+                <div style="background: white; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: transform 0.3s; transform: translateY(-5px);">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                        <div style="width: 60px; height: 60px; background: #28a745; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;">K</div>
+                        <div>
+                            <h3 style="margin: 0; color: #333;">Kagiso Molapo</h3>
+                            <p style="margin: 5px 0 0; color: #28a745; font-weight: bold;">Software Engineer</p>
+                        </div>
+                    </div>
+                    <p style="color: #0046ad; font-weight: 500; margin-bottom: 10px;">Mascom</p>
+                    <p style="color: #666; font-size: 14px; margin-bottom: 15px;">UB Graduate 2020 • Computer Science</p>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px; margin-right: 5px;">Career Guidance</span>
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px; margin-right: 5px;">Tech Skills</span>
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px;">Interview Prep</span>
+                    </div>
+                    
+                    <p style="color: #666; font-size: 14px; margin-bottom: 20px;">
+                        <i class="fas fa-clock" style="color: #28a745;"></i> Available: Weekdays, 2-4 sessions/month
+                    </p>
+                    
+                    <button onclick="alert('Mentorship request sent to Kagiso')" style="width: 100%; background: #28a745; color: white; border: none; padding: 12px; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                        Request Mentorship
+                    </button>
+                </div>
+
+                <!-- Mentor Card 2 -->
+                <div style="background: white; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                        <div style="width: 60px; height: 60px; background: #0046ad; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;">B</div>
+                        <div>
+                            <h3 style="margin: 0; color: #333;">Boitumelo Seth</h3>
+                            <p style="margin: 5px 0 0; color: #28a745; font-weight: bold;">Marketing Manager</p>
+                        </div>
+                    </div>
+                    <p style="color: #0046ad; font-weight: 500; margin-bottom: 10px;">FNB Botswana</p>
+                    <p style="color: #666; font-size: 14px; margin-bottom: 15px;">Botho Graduate 2018 • Marketing</p>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px; margin-right: 5px;">CV Writing</span>
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px; margin-right: 5px;">Interview Prep</span>
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px;">Career Guidance</span>
+                    </div>
+                    
+                    <p style="color: #666; font-size: 14px; margin-bottom: 20px;">
+                        <i class="fas fa-clock" style="color: #28a745;"></i> Available: Evenings & Weekends
+                    </p>
+                    
+                    <button onclick="alert('Mentorship request sent to Boitumelo')" style="width: 100%; background: #28a745; color: white; border: none; padding: 12px; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                        Request Mentorship
+                    </button>
+                </div>
+
+                <!-- Mentor Card 3 -->
+                <div style="background: white; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                        <div style="width: 60px; height: 60px; background: #dc3545; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;">T</div>
+                        <div>
+                            <h3 style="margin: 0; color: #333;">Thabo Ndlovu</h3>
+                            <p style="margin: 5px 0 0; color: #28a745; font-weight: bold;">Civil Engineer</p>
+                        </div>
+                    </div>
+                    <p style="color: #0046ad; font-weight: 500; margin-bottom: 10px;">Botswana Power Corporation</p>
+                    <p style="color: #666; font-size: 14px; margin-bottom: 15px;">BIUST Graduate 2019 • Engineering</p>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px; margin-right: 5px;">Technical Skills</span>
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px; margin-right: 5px;">Workplace Etiquette</span>
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px;">Industry Insights</span>
+                    </div>
+                    
+                    <p style="color: #666; font-size: 14px; margin-bottom: 20px;">
+                        <i class="fas fa-clock" style="color: #28a745;"></i> Available: Flexible
+                    </p>
+                    
+                    <button onclick="alert('Mentorship request sent to Thabo')" style="width: 100%; background: #28a745; color: white; border: none; padding: 12px; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                        Request Mentorship
+                    </button>
+                </div>
+
+                <!-- Mentor Card 4 -->
+                <div style="background: white; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                        <div style="width: 60px; height: 60px; background: #ffc107; color: #333; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;">L</div>
+                        <div>
+                            <h3 style="margin: 0; color: #333;">Lerato Moilwa</h3>
+                            <p style="margin: 5px 0 0; color: #28a745; font-weight: bold;">Financial Analyst</p>
+                        </div>
+                    </div>
+                    <p style="color: #0046ad; font-weight: 500; margin-bottom: 10px;">Debswana</p>
+                    <p style="color: #666; font-size: 14px; margin-bottom: 15px;">GUC Graduate 2017 • Finance</p>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px; margin-right: 5px;">Career Guidance</span>
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px; margin-right: 5px;">CV Writing</span>
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px;">Interview Prep</span>
+                    </div>
+                    
+                    <p style="color: #666; font-size: 14px; margin-bottom: 20px;">
+                        <i class="fas fa-clock" style="color: #28a745;"></i> Available: Weekdays, 1-2 sessions/month
+                    </p>
+                    
+                    <button onclick="alert('Mentorship request sent to Lerato')" style="width: 100%; background: #28a745; color: white; border: none; padding: 12px; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                        Request Mentorship
+                    </button>
+                </div>
+
+                <!-- Mentor Card 5 -->
+                <div style="background: white; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                        <div style="width: 60px; height: 60px; background: #6f42c1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;">M</div>
+                        <div>
+                            <h3 style="margin: 0; color: #333;">Mpho Raditladi</h3>
+                            <p style="margin: 5px 0 0; color: #28a745; font-weight: bold;">HR Business Partner</p>
+                        </div>
+                    </div>
+                    <p style="color: #0046ad; font-weight: 500; margin-bottom: 10px;">Mascom</p>
+                    <p style="color: #666; font-size: 14px; margin-bottom: 15px;">UB Graduate 2016 • Human Resources</p>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px; margin-right: 5px;">CV Writing</span>
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px; margin-right: 5px;">Interview Prep</span>
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px;">Workplace Etiquette</span>
+                    </div>
+                    
+                    <p style="color: #666; font-size: 14px; margin-bottom: 20px;">
+                        <i class="fas fa-clock" style="color: #28a745;"></i> Available: Weekdays, 3-4 sessions/month
+                    </p>
+                    
+                    <button onclick="alert('Mentorship request sent to Mpho')" style="width: 100%; background: #28a745; color: white; border: none; padding: 12px; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                        Request Mentorship
+                    </button>
+                </div>
+
+                <!-- Mentor Card 6 -->
+                <div style="background: white; border-radius: 10px; padding: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                        <div style="width: 60px; height: 60px; background: #fd7e14; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;">K</div>
+                        <div>
+                            <h3 style="margin: 0; color: #333;">Keabetswe Johnson</h3>
+                            <p style="margin: 5px 0 0; color: #28a745; font-weight: bold;">IT Project Manager</p>
+                        </div>
+                    </div>
+                    <p style="color: #0046ad; font-weight: 500; margin-bottom: 10px;">FNB Botswana</p>
+                    <p style="color: #666; font-size: 14px; margin-bottom: 15px;">Botho Graduate 2015 • Information Systems</p>
+                    
+                    <div style="margin-bottom: 15px;">
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px; margin-right: 5px;">Technical Skills</span>
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px; margin-right: 5px;">Career Guidance</span>
+                        <span style="background: #e6f0ff; color: #0046ad; padding: 5px 10px; border-radius: 20px; font-size: 12px;">Leadership</span>
+                    </div>
+                    
+                    <p style="color: #666; font-size: 14px; margin-bottom: 20px;">
+                        <i class="fas fa-clock" style="color: #28a745;"></i> Available: Evenings, 2 sessions/month
+                    </p>
+                    
+                    <button onclick="alert('Mentorship request sent to Keabetswe')" style="width: 100%; background: #28a745; color: white; border: none; padding: 12px; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                        Request Mentorship
+                    </button>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div style="text-align: center; margin-top: 40px;">
+                <button onclick="alert('Loading more mentors (demo)')" style="background: transparent; border: 2px solid #0046ad; color: #0046ad; padding: 12px 40px; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                    Load More Mentors
+                </button>
+            </div>
+
+            <!-- Become a Mentor CTA -->
+            <div style="background: linear-gradient(135deg, #28a745, #1e7e34); color: white; padding: 40px; border-radius: 10px; margin-top: 50px; text-align: center;">
+                <h2 style="color: white; margin-bottom: 15px; font-size: 28px;">Are you an alumni?</h2>
+                <p style="margin-bottom: 25px; font-size: 18px; opacity: 0.9;">Share your experience and guide the next generation of professionals.</p>
+                <a href="signup.html?type=mentor" style="background: white; color: #28a745; padding: 15px 40px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block;">Become a Mentor</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px;">
+        <p>&copy; 2026 Bridge Campus. All rights reserved.</p>
+    </footer>
+</body>
+</html>

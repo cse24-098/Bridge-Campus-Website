@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Dashboard - Bridge Campus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Bridge Campus</h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Browse Jobs</a></li>
+                <li><a href="company-dashboard.html">For Companies</a></li>
+                <li><a href="login.html" class="btn-outline">Login</a></li>
+                <li><a href="signup.html" class="btn-primary">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mentor Dashboard -->
+    <section class="dashboard">
+        <div class="container">
+            <h1>Mentor Dashboard</h1>
+            
+            <!-- Profile Summary Card -->
+            <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; display: flex; align-items: center; gap: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <div style="width: 60px; height: 60px; background: #28a745; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;">K</div>
+                <div>
+                    <h3 style="margin: 0; color: #333;">Kagiso Molapo</h3>
+                    <p style="margin: 5px 0 0; color: #666;">Software Engineer at Mascom • UB Graduate 2020</p>
+                </div>
+                <div style="margin-left: auto;">
+                    <span style="background: #28a745; color: white; padding: 5px 15px; border-radius: 20px; font-size: 14px;">Active Mentor</span>
+                </div>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 250px 1fr; gap: 20px;">
+                <!-- SIDEBAR -->
+                <div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px;"><a href="#" style="display: block; padding: 10px; background: #28a745; color: white; text-decoration: none; border-radius: 5px;">Dashboard</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="display: block; padding: 10px; color: #333; text-decoration: none; border-radius: 5px;">My Mentees</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="display: block; padding: 10px; color: #333; text-decoration: none; border-radius: 5px;">Mentorship Requests</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="display: block; padding: 10px; color: #333; text-decoration: none; border-radius: 5px;">Upcoming Sessions</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="display: block; padding: 10px; color: #333; text-decoration: none; border-radius: 5px;">Messages</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="display: block; padding: 10px; color: #333; text-decoration: none; border-radius: 5px;">My Profile</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="display: block; padding: 10px; color: #333; text-decoration: none; border-radius: 5px;">Resources for Mentees</a></li>
+                    </ul>
+                </div>
+                
+                <!-- MAIN CONTENT -->
+                <div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <!-- Stats Overview -->
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 30px;">
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center;">
+                            <h3 style="color: #28a745; margin: 0; font-size: 28px;">4</h3>
+                            <p style="color: #666; margin: 5px 0 0;">Active Mentees</p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center;">
+                            <h3 style="color: #28a745; margin: 0; font-size: 28px;">2</h3>
+                            <p style="color: #666; margin: 5px 0 0;">Pending Requests</p>
+                        </div>
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center;">
+                            <h3 style="color: #28a745; margin: 0; font-size: 28px;">12</h3>
+                            <p style="color: #666; margin: 5px 0 0;">Sessions Completed</p>
+                        </div>
+                    </div>
+
+                    <!-- Pending Mentorship Requests -->
+                    <h2 style="color: #333; margin-bottom: 15px;">Mentorship Requests</h2>
+                    
+                    <div style="border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin-bottom: 15px; background: #f9f9f9;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div style="width: 40px; height: 40px; background: #0046ad; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">T</div>
+                            <div style="flex: 1;">
+                                <h3 style="margin: 0; color: #333;">Thabo Ndlovu</h3>
+                                <p style="margin: 5px 0 0; color: #666; font-size: 14px;">BIUST • Year 3 Engineering • Requested 2 days ago</p>
+                                <p style="margin: 5px 0 0; color: #28a745; font-size: 14px;">Looking for guidance in: Career path, Interview prep</p>
+                            </div>
+                            <div style="display: flex; gap: 10px;">
+                                <button onclick="alert('Request accepted')" style="background: #28a745; color: white; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer;">Accept</button>
+                                <button onclick="alert('Request declined')" style="background: #dc3545; color: white; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer;">Decline</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin-bottom: 30px; background: #f9f9f9;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div style="width: 40px; height: 40px; background: #0046ad; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">K</div>
+                            <div style="flex: 1;">
+                                <h3 style="margin: 0; color: #333;">Keitumetse Modise</h3>
+                                <p style="margin: 5px 0 0; color: #666; font-size: 14px;">Botho University • Year 2 IT • Requested yesterday</p>
+                                <p style="margin: 5px 0 0; color: #28a745; font-size: 14px;">Looking for guidance in: Technical skills, CV writing</p>
+                            </div>
+                            <div style="display: flex; gap: 10px;">
+                                <button onclick="alert('Request accepted')" style="background: #28a745; color: white; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer;">Accept</button>
+                                <button onclick="alert('Request declined')" style="background: #dc3545; color: white; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer;">Decline</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Current Mentees -->
+                    <h2 style="color: #333; margin-bottom: 15px;">My Mentees</h2>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 30px;">
+                        <div style="border: 1px solid #ddd; border-radius: 8px; padding: 15px;">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                <div style="width: 35px; height: 35px; background: #0046ad; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">M</div>
+                                <h3 style="margin: 0; font-size: 16px;">Mpho Sebetlela</h3>
+                            </div>
+                            <p style="color: #666; font-size: 14px; margin: 5px 0;">UB • Year 3 Computer Science</p>
+                            <p style="color: #28a745; font-size: 13px; margin: 5px 0;">Next session: Tomorrow, 3pm</p>
+                            <button onclick="alert('Opening chat with mentee')" style="background: transparent; border: 1px solid #28a745; color: #28a745; padding: 5px 15px; border-radius: 5px; margin-top: 10px; cursor: pointer;">Message</button>
+                        </div>
+                        
+                        <div style="border: 1px solid #ddd; border-radius: 8px; padding: 15px;">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                <div style="width: 35px; height: 35px; background: #0046ad; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">B</div>
+                                <h3 style="margin: 0; font-size: 16px;">Boitumelo Seth</h3>
+                            </div>
+                            <p style="color: #666; font-size: 14px; margin: 5px 0;">BIUST • Year 4 Electrical Engineering</p>
+                            <p style="color: #28a745; font-size: 13px; margin: 5px 0;">Next session: Friday, 11am</p>
+                            <button onclick="alert('Opening chat with mentee')" style="background: transparent; border: 1px solid #28a745; color: #28a745; padding: 5px 15px; border-radius: 5px; margin-top: 10px; cursor: pointer;">Message</button>
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Sessions -->
+                    <h2 style="color: #333; margin-bottom: 15px;">Upcoming Sessions</h2>
+                    
+                    <div style="border-left: 3px solid #28a745; background: #f8f9fa; padding: 15px; margin-bottom: 10px; border-radius: 5px;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <h3 style="margin: 0; font-size: 16px;">Career Guidance with Mpho</h3>
+                                <p style="color: #666; margin: 5px 0 0;">Tomorrow • 3:00 PM - 4:00 PM</p>
+                            </div>
+                            <button onclick="alert('Joining session')" style="background: #28a745; color: white; border: none; padding: 5px 15px; border-radius: 5px; cursor: pointer;">Join</button>
+                        </div>
+                    </div>
+                    
+                    <div style="border-left: 3px solid #28a745; background: #f8f9fa; padding: 15px; margin-bottom: 10px; border-radius: 5px;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <h3 style="margin: 0; font-size: 16px;">Technical Skills Review with Boitumelo</h3>
+                                <p style="color: #666; margin: 5px 0 0;">Friday • 11:00 AM - 12:00 PM</p>
+                            </div>
+                            <button onclick="alert('Joining session')" style="background: #28a745; color: white; border: none; padding: 5px 15px; border-radius: 5px; cursor: pointer;">Join</button>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+                        <h3 style="color: #333; margin-bottom: 15px;">Quick Actions</h3>
+                        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <a href="mentors.html" style="background: #f0f0f0; color: #333; padding: 10px 20px; text-decoration: none; border-radius: 5px;">View Mentor Profile</a>
+                            <a href="#" style="background: #f0f0f0; color: #333; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Share Resources</a>
+                            <a href="#" style="background: #f0f0f0; color: #333; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Schedule Availability</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px;">
+        <p>&copy; 2026 Bridge Campus. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Bridge Campus</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .verification-note {
+            background: #e7f3ff;
+            border-left: 4px solid #0046ad;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .required:after {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Bridge Campus</h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Browse Jobs</a></li>
+                <li><a href="company-dashboard.html">For Companies</a></li>
+                <li><a href="login.html" class="btn-outline">Login</a></li>
+                <li><a href="signup.html" class="btn-primary">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sign Up Form -->
+    <div style="max-width: 750px; margin: 30px auto; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <h2 style="color: #0046ad; text-align: center; margin-bottom: 10px;">Create Account</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 25px;">Join Bridge Campus today</p>
+        
+        <!-- Account Type Toggle -->
+        <div style="display: flex; gap: 10px; margin-bottom: 25px; background: #f0f0f0; padding: 5px; border-radius: 50px;">
+            <button onclick="showStudentForm()" id="btnStudent" style="flex: 1; padding: 10px; border: none; border-radius: 50px; background: #0046ad; color: white; font-weight: bold; cursor: pointer;">I'm a Student</button>
+            <button onclick="showCompanyForm()" id="btnCompany" style="flex: 1; padding: 10px; border: none; border-radius: 50px; background: transparent; color: #666; cursor: pointer;">I'm a Company</button>
+            <button onclick="showMentorForm()" id="btnMentor" style="flex: 1; padding: 10px; border: none; border-radius: 50px; background: transparent; color: #666; cursor: pointer;">I'm a Mentor</button>
+        </div>
+
+        <!-- VERIFICATION NOTE -->
+        <div class="verification-note">
+            <strong>Verification Required:</strong> All accounts must be verified to ensure trust and safety on our platform.
+        </div>
+
+        <!-- STUDENT FORM (shown by default) -->
+        <div id="studentForm">
+            <h3 style="color: #333; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee;">Student Registration</h3>
+            
+            <!-- Personal Info -->
+            <div style="margin-bottom: 20px;">
+                <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Full Name</label>
+                <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="Enter your full name">
+            </div>
+            
+            <!-- STUDENT VERIFICATION FIELDS -->
+            <div style="background: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                <h4 style="color: #0046ad; margin-bottom: 15px;">🎓 Student Verification</h4>
+                
+                <div style="margin-bottom: 15px;">
+                    <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Institution</label>
+                    <select style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option value="">-- Select your university/college --</option>
+                        <option>University of Botswana (UB)</option>
+                        <option>Botswana International University of Science & Technology (BIUST)</option>
+                        <option>Botho University</option>
+                        <option>Limkokwing University</option>
+                        <option>Gaborone University College (GUC)</option>
+                        <option>Botswana Accountancy College (BAC)</option>
+                        <option>Vocational Training Centre</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Student ID Number</label>
+                    <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="e.g., 2021001234">
+                    <p style="font-size: 12px; color: #666; margin-top: 5px;">Enter your official student ID as shown on your student card</p>
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">University Email</label>
+                    <input type="email" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="e.g., kagiso.t@ub.ac.bw">
+                    <p style="font-size: 12px; color: #666; margin-top: 5px;">Must end with .ac.bw or .edu.bw</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                    <div>
+                        <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Program of Study</label>
+                        <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="e.g., BSc Computer Science">
+                    </div>
+                    <div>
+                        <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Year of Study</label>
+                        <select style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                            <option>Year 1</option>
+                            <option>Year 2</option>
+                            <option>Year 3</option>
+                            <option>Year 4</option>
+                            <option>Year 5+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Upload Student ID (optional but good) -->
+            <div style="margin-bottom: 20px; border: 2px dashed #ddd; padding: 20px; text-align: center; border-radius: 8px;">
+                <p style="margin-bottom: 10px; color: #666;">📎 Upload Student ID Card (Optional)</p>
+                <button style="background: #f0f0f0; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer;">Choose File</button>
+                <p style="font-size: 12px; color: #999; margin-top: 10px;">JPG or PNG, max 2MB</p>
+            </div>
+            
+            <!-- Account Security -->
+            <div style="margin-bottom: 20px;">
+                <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Password</label>
+                <input type="password" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="Create a password">
+            </div>
+            
+            <div style="margin-bottom: 30px;">
+                <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Confirm Password</label>
+                <input type="password" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="Re-enter password">
+            </div>
+            
+            <!-- Terms and Verification Agreement -->
+            <div style="margin-bottom: 20px;">
+                <label style="display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox">
+                    <span style="font-size: 14px;">I confirm that the information provided is true and accurate. I understand that false information will lead to account suspension.</span>
+                </label>
+            </div>
+            
+            <button onclick="window.location.href='student-dashboard.html'" style="width: 100%; background: #0046ad; color: white; padding: 14px; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer;">
+                Create Student Account
+            </button>
+        </div>
+
+        <!-- COMPANY FORM (hidden initially) -->
+        <div id="companyForm" style="display: none;">
+            <h3 style="color: #333; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee;">Company Registration</h3>
+            
+            <div style="margin-bottom: 20px;">
+                <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Company Name</label>
+                <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="e.g., Debswana, Mascom, etc.">
+            </div>
+            
+            <!-- COMPANY VERIFICATION FIELDS -->
+            <div style="background: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                <h4 style="color: #0046ad; margin-bottom: 15px;">🏢 Company Verification</h4>
+                
+                <div style="margin-bottom: 15px;">
+                    <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Company Registration Number</label>
+                    <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="e.g., CIPA Reg No: BW123456789">
+                    <p style="font-size: 12px; color: #666; margin-top: 5px;">Enter your CIPA registration number</p>
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Tax Identification Number (TIN)</label>
+                    <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="e.g., TIN: 123456789">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Business Email</label>
+                    <input type="email" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="e.g., hr@company.co.bw">
+                    <p style="font-size: 12px; color: #666; margin-top: 5px;">Must be company domain email</p>
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Industry</label>
+                    <select style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option>Mining</option>
+                        <option>Telecommunications</option>
+                        <option>Banking/Finance</option>
+                        <option>Retail</option>
+                        <option>Technology</option>
+                        <option>Hospitality</option>
+                        <option>Construction</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Upload Documents -->
+            <div style="margin-bottom: 20px; border: 2px dashed #ddd; padding: 20px; text-align: center; border-radius: 8px;">
+                <p style="margin-bottom: 10px; color: #666;">📎 Upload Company Registration Certificate</p>
+                <button style="background: #f0f0f0; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer;">Choose File</button>
+                <p style="font-size: 12px; color: #999; margin-top: 10px;">PDF or image, max 5MB</p>
+            </div>
+            
+            <!-- Contact Person -->
+            <h4 style="margin: 20px 0 15px;">Contact Person Details</h4>
+            
+            <div style="margin-bottom: 15px;">
+                <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">HR/Contact Person Name</label>
+                <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Position in Company</label>
+                <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="e.g., HR Manager">
+            </div>
+            
+            <div style="margin-bottom: 20px;">
+                <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Phone Number</label>
+                <input type="tel" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="e.g., 71 234 567">
+            </div>
+            
+            <!-- Password -->
+            <div style="margin-bottom: 20px;">
+                <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Password</label>
+                <input type="password" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+            
+            <div style="margin-bottom: 30px;">
+                <label class="required" style="display: block; margin-bottom: 5px; font-weight: bold;">Confirm Password</label>
+                <input type="password" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+            
+            <!-- Terms -->
+            <div style="margin-bottom: 20px;">
+                <label style="display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox">
+                    <span style="font-size: 14px;">I confirm that this is a legitimate business and all information provided is accurate.</span>
+                </label>
+            </div>
+            
+            <button onclick="window.location.href='company-dashboard.html'" style="width: 100%; background: #28a745; color: white; padding: 14px; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer;">
+                Register Company
+            </button>
+        </div>
+
+        <p style="text-align: center; margin-top: 25px;">
+            Already have an account? <a href="login.html" style="color: #0046ad;">Login</a>
+        </p>
+        
+        <!-- Demo note -->
+        <p style="text-align: center; margin-top: 30px; font-size: 13px; color: #888; border-top: 1px dashed #ddd; padding-top: 20px;">
+            Demo: Verification fields are shown. In real app, these would be checked against databases.
+        </p>
+
+        <!-- MENTOR FORM -->
+    <div id="mentorForm" style="display: none;">
+        <h3 style="color: #333; margin-bottom: 20px;">Mentor Registration</h3>
+        <p style="color: #666; margin-bottom: 20px;">Join as an alumni mentor to guide the next generation of professionals.</p>
+        
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: bold;">Full Name</label>
+            <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="Your full name">
+        </div>
+        
+        <div style="background: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+            <h4 style="color: #0046ad; margin-bottom: 15px;">Verification</h4>
+            
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Institution Graduated From</label>
+                <select style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                    <option>University of Botswana (UB)</option>
+                    <option>BIUST</option>
+                    <option>Botho University</option>
+                    <option>Limkokwing University</option>
+                    <option>GUC</option>
+                    <option>BAC</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Year of Graduation</label>
+                <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="e.g., 2020">
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Current Employer</label>
+                <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="e.g., Debswana, Mascom">
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Job Title</label>
+                <input type="text" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="e.g., Software Engineer">
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: bold;">Email</label>
+            <input type="email" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;" placeholder="your@email.com">
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 5px; font-weight: bold;">Password</label>
+            <input type="password" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+        </div>
+        
+        <button onclick="window.location.href='mentor-dashboard.html'" style="width: 100%; background: #28a745; color: white; padding: 14px; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer;">
+            Register as Mentor
+        </button>
+    </div>
+
+    </div>
+
+
+    <!-- JavaScript to toggle between forms -->
+    <script>
+        function showStudentForm() {
+            // Show/hide forms
+            document.getElementById('studentForm').style.display = 'block';
+            document.getElementById('companyForm').style.display = 'none';
+            document.getElementById('mentorForm').style.display = 'none';
+            
+            // Reset all buttons first
+            document.getElementById('btnStudent').style.background = '#0046ad';
+            document.getElementById('btnStudent').style.color = 'white';
+            document.getElementById('btnCompany').style.background = 'transparent';
+            document.getElementById('btnCompany').style.color = '#666';
+            document.getElementById('btnMentor').style.background = 'transparent';
+            document.getElementById('btnMentor').style.color = '#666';
+        }
+
+        function showCompanyForm() {
+            // Show/hide forms
+            document.getElementById('studentForm').style.display = 'none';
+            document.getElementById('companyForm').style.display = 'block';
+            document.getElementById('mentorForm').style.display = 'none';
+            
+            // Reset all buttons first
+            document.getElementById('btnStudent').style.background = 'transparent';
+            document.getElementById('btnStudent').style.color = '#666';
+            document.getElementById('btnCompany').style.background = '#28a745';
+            document.getElementById('btnCompany').style.color = 'white';
+            document.getElementById('btnMentor').style.background = 'transparent';
+            document.getElementById('btnMentor').style.color = '#666';
+        }
+
+        function showMentorForm() {
+            // Show/hide forms
+            document.getElementById('studentForm').style.display = 'none';
+            document.getElementById('companyForm').style.display = 'none';
+            document.getElementById('mentorForm').style.display = 'block';
+            
+            // Reset all buttons first
+            document.getElementById('btnStudent').style.background = 'transparent';
+            document.getElementById('btnStudent').style.color = '#666';
+            document.getElementById('btnCompany').style.background = 'transparent';
+            document.getElementById('btnCompany').style.color = '#666';
+            document.getElementById('btnMentor').style.background = '#28a745';
+            document.getElementById('btnMentor').style.color = 'white';
+        }
+
+    </script>
+
+    <!-- Footer -->
+    <footer style="background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px;">
+        <p>&copy; 2026 Bridge Campus. All rights reserved.</p>
+    </footer>
+</body>
+</html>
